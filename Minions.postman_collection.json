@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "be16fcdf-82da-4540-b75d-4d09bbb59833",
+		"name": "Minions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /api/minions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/minions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"minions"
+					]
+				},
+				"description": "Get all minions list"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/minions/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sedf\",\r\n    \"age\": 3,\r\n    \"color\": \"black\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/minions/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"minions",
+						"create"
+					]
+				},
+				"description": "add a minion"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/minions/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"tommy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/minions/636bdffab31fb2179f46559e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"minions",
+						"636bdffab31fb2179f46559e"
+					]
+				},
+				"description": "Update a minion details"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /api/minion/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/minions/636be5819c119903ac43da11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"minions",
+						"636be5819c119903ac43da11"
+					]
+				},
+				"description": "Delete a minion"
+			},
+			"response": []
+		}
+	]
+}
